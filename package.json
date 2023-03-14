@@ -1,0 +1,30 @@
+{
+  "name": "adbaby-controller",
+  "version": "1.0.0",
+  "description": "Data controller for adbaby webapp",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/superagent": "^4.1.16",
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.256.0",
+    "adbaby-model": "file:../adbaby-model",
+    "amazon-cognito-identity-js": "^6.1.2",
+    "aws-jwt-verify": "^3.3.0",
+    "aws-sdk": "^2.1302.0",
+    "big-integer": "^1.6.51",
+    "superagent": "^8.0.9"
+  }
+}
