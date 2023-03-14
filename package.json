@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "prepare": "npm run build",
     "build": "npx tsc",
     "start": "node dist/index.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
@@ -20,7 +21,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-cognito-identity-provider": "^3.256.0",
-    "adbaby-model": "file:../adbaby-model",
+    "adbaby-model": "github:adbaby-org/adbaby-model",
     "amazon-cognito-identity-js": "^6.1.2",
     "aws-jwt-verify": "^3.3.0",
     "aws-sdk": "^2.1302.0",
